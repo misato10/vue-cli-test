@@ -1,7 +1,6 @@
 <template>
   <div class="example">
-    <h1>example</h1> 
-    <p>テスト</p>
+    <span class="tittle">{{ text }}</span>
   </div>
 </template>
 
@@ -9,14 +8,19 @@
 export default {
   name: 'Example',
   props: {
-    msg: String
+    msg: String,
+  },
+  data() {
+    return {
+      text: 'example'
+    }
   }
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h1 {
+.tittle {
   margin: 40px 0 0;
   color: #42b983;
 }

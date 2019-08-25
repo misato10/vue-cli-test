@@ -1,21 +1,21 @@
 <template>
-  <div class="exapmle">
-    <span class=""tittle>{{ text }}</span>
-  </div>
+computed: {
+    scrollY: function() {
+      return this.$window.scrollY
+    }
+  }
 </template>
 
 <script>
 export default {
-  name: 'ExampleTwo',
+  name: 'HelloWorld',
   props: {
-    text: 'Example02'
-  }
+    msg: String
+  },
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-span.tittle {
-    color: #ffb00;
-}
+
 </style>
