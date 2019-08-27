@@ -1,11 +1,9 @@
 import Vue from 'vue'
 import App from './App.vue'
+import Home from './components/Home.vue'
 
-// VueにVuexを登録
-//Vue.use(Vuex)
+Vue.component('app-servers', Home)
 
-/*import windowPlugin from './scroll'
-Vue.use(windowPlugin);*/
 
 Vue.config.productionTip = false
 

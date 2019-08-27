@@ -1,18 +1,23 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
-    <app-servers></app-servers>
+    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Example msg="Welcome to Your Vue.js App"/> 
   </div>
 </template>
 
 <script>
-
+import HelloWorld from './components/HelloWorld.vue'
+import Example from './components/Example.vue'
 
 export default {
-  data: function() {
-    return {
-      status: 'Critical'
-    }
+}
+/*
+export default {
+  name: 'app',
+  components: {
+    HelloWorld,
+    Example
   }
 }
 </script>
